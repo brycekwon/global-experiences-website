@@ -1,0 +1,6 @@
+h1.title University of Portland CISGO
+nav.navbar
+    ul
+        each field in fields
+            li.nav-item
+                a(href=(field === "Home" ? "/" : field.toLowerCase()), class=(field === title ? 'active' : ''))= field

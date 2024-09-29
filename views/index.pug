@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(rel="stylesheet" href="/css/default.css")
+    link(rel="stylesheet" href="/css/home.css")
+    link(rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css")
+  body
+    include components/header
+    main
+      section.map-section
+        div#map
+      aside.info-card
+        h2 Info Card
+        p This will be a small description or information card.
+
+    script(src="https://unpkg.com/leaflet/dist/leaflet.js", defer)
+    script(src="/js/map.js", defer)

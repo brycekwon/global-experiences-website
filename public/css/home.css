@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.map-section {
+    flex: 3;
+    margin-right: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+}
+
+#map {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.info-card {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: calc(100% - 40px);
+}

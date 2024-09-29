@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(rel="stylesheet" href="/css/default.css")
+    link(rel="stylesheet" href="/css/search.css")
+  body
+    include components/header
+    main
+      section.search-section
+        form.search-form
+          input(type="text", placeholder="Search here...", name="search", id="search-bar")
+          button(type="submit") Search
+        div#resultsContainer
+      aside.info-card
+        h2#info-name Info Card
+        p#info-email
+        p#info-description This will be a small description or information card.
+        p#info-location
+        p#info-dates
+        p#info-description
+
+    script(src="/js/search.js", defer)

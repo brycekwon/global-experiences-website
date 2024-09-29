@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.search-section {
+    flex: 3;
+    margin-right: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /*height: calc(100% - 40px);*/
+    overflow-y: hidden;
+    max-height: 79vh;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.info-card {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: calc(100% - 40px);
+}
+
+#resultsContainer {
+    margin-top: 20px;
+    flex: 1;
+    overflow-y: scroll;
+    /*max-height: calc(50% - 60px);*/
+}
+
+.result-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-card h3 {
+    margin: 0 0 10px;
+}
+
+.result-card p {
+    margin: 5px 0;
+}
+
+.svg-image {
+    width: 24px;
+    height: auto;
+}
